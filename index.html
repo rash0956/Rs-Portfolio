@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!------------------------------Header Design--------------------------->
+
+    <header class="header">
+        <a href="#" class="logo">Ras<span>h.</span></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#port">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+<!------------------------------HOME--------------------------->
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi ,I'm <span>Rashmi Sandaruwini</span></h1>
+        <div class="text-animate">
+            <h3>Frontend Developper</h3>
+        </div>
+
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-github' ></i></a>
+        </div>
+
+        <div class="home-imgHover"></div>
+
+    </div>
+</section>
+
+<!------------------------------ABOUT--------------------------->
+
+<section class="about" id="about">
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <div class="ab-img">
+        <img src="img/user12.jpg" alt="">
+        <span class="circle-spin"></span>
+    </div>
+
+    <div class="about-content">
+        <p>I am a Frontend developer and graphic designer, 4rd year graduate, who is currently following a BSc (Hons) in software engineering degree program at Sri Lanka Technology Campus. I am really passionate about software engineering (especially Ui) and graphic design and working in a competitive and innovative environment that allows me to utilize and sharpen my programming and software development skills.</p>
+
+        <a href="#" class="btn">Download CV</a>
+    </div>
+
+</section>
+
+<!------------------------------Education--------------------------->
+
+<section class="education" id="education">
+    <h2 class="heading">Education <span>and</span> Skills</h2>
+    <!--<div id="about">-->
+        <div class="container">
+            <div class="row">
+                <!--<div class="about-col-1">
+                    <img src="images/user11.jpg">
+                </div>-->
+    
+                <div class="about-col-2">
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!---p class="tab-links" onclick="opentab('experience')">Experience</p---->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certificate & Courses</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>JavaScript/ Python/ Java/ CSS/ HTML</li>
+                            <!---li><span>Web development</span><br>Web app development</li---->
+                            <li><span>Graphi Designing</span><br>Adobe Illustrator/ Adobe Photoshop</li>
+                        </ul>
+                    </div>
+                    <!----div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>None</span><br>.............</li>
+                            <li><span>None</span><br>.............</li>
+                            <li><span>None</span><br>.............</li>
+                        </ul>
+                    </div---->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Sri Lanka Technological Campus Padukka</span><br>BSc (Hons) in Software Engineering(2020-2024)</li>
+                            <li><span>IMBS Green Campus</span><br>Diploma in Psychology & Counselling</li>
+                            <li><span>B/ Vishaka Girls High School Badulla</span><br>Completed G.C.E(A/L) in 2017 <br>(ICT - C, Geography - B, Mdeia - B)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificate">
+                        <ul>
+                            <li><span>Uva Wellassa University</span><br>Certificate Course In Engilish For School Leavers</li>
+                            <li><span>National Youth Services Council Badulla</span><br>Certificate Course in Computer Application Assistant</li>
+                            <li><span>Sri Lanka Technological Campus Padukka</span><br> Road to CodMania’21: Python Fundamentals & Algorithmic Programming IEEE 
+                                Computer Society</li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
