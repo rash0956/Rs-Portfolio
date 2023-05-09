@@ -7,6 +7,10 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--========== UNICONS ==========-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
 </head>
 <body>
 <!------------------------------Header Design--------------------------->
@@ -19,7 +23,6 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#education">Education</a>
             <a href="#port">Portfolio</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -62,61 +65,144 @@
         <a href="#" class="btn">Download CV</a>
     </div>
 
+
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <!---p class="tab-links" onclick="opentab('experience')">Experience</p---->
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+        <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
+    </div>
+
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>Programming Language</span><br>JavaScript/ Python/ Java/ CSS/ HTML</li>
+            <!---li><span>Web development</span><br>Web app development</li---->
+            <li><span>Graphi Designing</span><br>Adobe Illustrator/ Adobe Photoshop</li>
+        </ul>
+    </div>
+    <!----div class="tab-contents" id="experience">
+        <ul>
+            <li><span>None</span><br>.............</li>
+            <li><span>None</span><br>.............</li>
+            <li><span>None</span><br>.............</li>
+        </ul>
+    </div---->
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span>Sri Lanka Technological Campus Padukka</span><br>BSc (Hons) in Software Engineering(2020-2024)</li>
+            <li><span>IMBS Green Campus</span><br>Diploma in Psychology & Counselling</li>
+            <li><span>B/ Vishaka Girls High School Badulla</span><br>Completed G.C.E(A/L) in 2017 <br>(ICT - C, Geography - B, Mdeia - B)</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="certificate">
+        <ul>
+            <li><span>University Of Moratuwa</span><br>Online learning Programme in Web Designing for Beginners</li>
+            <li><span>Uva Wellassa University</span><br>Certificate Course In Engilish For School Leavers</li>
+            <li><span>National Youth Services Council Badulla</span><br>Certificate Course in Computer Application Assistant</li>
+            <li><span>Sri Lanka Technological Campus Padukka</span><br> Road to CodMania’21: Python Fundamentals & Algorithmic Programming IEEE 
+                Computer Society</li>
+        </ul>
+    </div>    
+
 </section>
 
-<!------------------------------Education--------------------------->
+<!------------------------------Portfolio--------------------------->
 
-<section class="education" id="education">
-    <h2 class="heading">Education <span>and</span> Skills</h2>
-    <!--<div id="about">-->
-        <div class="container">
-            <div class="row">
-                <!--<div class="about-col-1">
-                    <img src="images/user11.jpg">
-                </div>-->
-    
-                <div class="about-col-2">
-                    
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <!---p class="tab-links" onclick="opentab('experience')">Experience</p---->
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('certificate')">Certificate & Courses</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Programming Language</span><br>JavaScript/ Python/ Java/ CSS/ HTML</li>
-                            <!---li><span>Web development</span><br>Web app development</li---->
-                            <li><span>Graphi Designing</span><br>Adobe Illustrator/ Adobe Photoshop</li>
-                        </ul>
-                    </div>
-                    <!----div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>None</span><br>.............</li>
-                            <li><span>None</span><br>.............</li>
-                            <li><span>None</span><br>.............</li>
-                        </ul>
-                    </div---->
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Sri Lanka Technological Campus Padukka</span><br>BSc (Hons) in Software Engineering(2020-2024)</li>
-                            <li><span>IMBS Green Campus</span><br>Diploma in Psychology & Counselling</li>
-                            <li><span>B/ Vishaka Girls High School Badulla</span><br>Completed G.C.E(A/L) in 2017 <br>(ICT - C, Geography - B, Mdeia - B)</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="certificate">
-                        <ul>
-                            <li><span>Uva Wellassa University</span><br>Certificate Course In Engilish For School Leavers</li>
-                            <li><span>National Youth Services Council Badulla</span><br>Certificate Course in Computer Application Assistant</li>
-                            <li><span>Sri Lanka Technological Campus Padukka</span><br> Road to CodMania’21: Python Fundamentals & Algorithmic Programming IEEE 
-                                Computer Society</li>
-                        </ul>
-                    </div>    
+<section class="port" id="port">
+
+    <div class="container">
+        <h1 class="sub-title">My <span>work</span></h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/portfolio1.jpg">
+                <div class="layer">
+                    <h3>Graphic Design (Ai & Ps)</h3>
+                    <p>This is my Graphic design. I design template and Ai picture</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/portfolio2.jpg">
+                <div class="layer">
+                    <h3>Bla bla bla</h3>
+                    <p>This is my Graphic design. I design template and Ai picture</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/portfolio3.jpg">
+                <div class="layer">
+                    <h3>Teen teen teen</h3>
+                    <p>This is my Graphic design. I design template and Ai picture</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/portfolio4.jpg">
+                <div class="layer">
+                    <h3>Bla bla bla</h3>
+                    <p>This is my Graphic design. I design template and Ai picture</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
+        <a href="#" class="btn">See more</a>
     </div>
+    
 </section>
+
+
+<!------------------------------CONTACT--------------------------->#
+
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
+
+    <form action="#">
+        <div class="input-box">
+            <div class="input-field">
+                <input type="text" placeholder="Full Name" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Email Address" required>
+                <span class="focus"></span>
+            </div>
+        </div>
+
+        <div class="input-box">
+            <div class="input-field">
+                <input type="number" placeholder="Mobile Number" required>
+                <span class="focus"></span>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Subject" required>
+                <span class="focus"></span>
+            </div>
+        </div>
+
+        <div class="textarea-field">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <span class="focus"></span>
+        </div>
+
+        <div class="btn-box btns">
+            <button type="submit" class="btn">Submit</button>
+        </div>
+    </form>
+</section>
+
+<!------------------------------FOOTER--------------------------->
+
+<fooer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; Rashmi.2023</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+</fooer>
+
 
 
     <script src="script.js"></script>

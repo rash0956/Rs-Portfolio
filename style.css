@@ -12,7 +12,7 @@
 }
 :root {
     --bg-color: #000000;
-    --sec-bg-color: #171616;
+    --sec-bg-color: #172c39;
     --text-color: #fff;
     --main-color: #17a5b2;
 }
@@ -207,7 +207,7 @@ span {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #41eafa;
+    border: 1px solid var(--main-color);
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -220,75 +220,239 @@ span {
 .btn:hover {
     background: var(--main-color);
 }
-
-/*--------------------------------EDUCATION---------------------------------------- */
-
-.education {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: auto;
-    padding: 30px 0;
-
-}
-.education .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
-}
- .row{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
- }
- .about-col-1{
-    flex-basis: 50%;
- }
- .about-col-1 img{
-    width: 100%;
-    border-radius: 15px;
- }
- .about-col-2{
-    flex-basis: 50%;
- }
- .sub-title{
-    font-size: 60px;
-    font-weight: 600;
-    color: #fff;
- }
  .tab-titles{
-    justify-content: space-between;
     display: flex;
-    margin: 20px 0 40px;
-    gap: 30rem;
+    margin: 10px 0 20px;
+    gap: 90px;
+    
  }
  .tab-links{
-    margin-right: 50px;
+    margin-right: 70px;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: var(--text-color);
     transition: .3s;
+    
 }
 .tab-links:hover {
-    color: var(--main-color);
+   color: var(--main-color);
 }
-/*.tab-links.active-link::after{
+.tab-links.active-link::after{
     width: 50%;
-}*/
+}
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
-    font-size: 14px;
+    font-size: 15px;
 }
 .tab-contents ul li span{
-    color: #41eafa;
-    font-size: 15px;
+    color: var(--main-color);
+    font-size: 18px;
 }
 .tab-contents{
     display: none;
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+/*--------------------------------PORTFOLIO---------------------------------------- */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.work-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(230px, auto));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #41eafa);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #41eafa;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #41eafa;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: bbackground 0.5s;
+}
+.btn:hover{
+    background: #41eafa;
+}
+
+/*--------------------------------PORTFOLIO---------------------------------------- */
+
+.contact {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--sec-bg-color);
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus {
+    width: 100%;
+}
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+.contact form .textarea-field textarea {
+    resize: none;
+}
+.contact form .btn-box.btns .btn {
+    cursor: pointer;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--sec-bg-color);
+}
+.footer-text p {
+    font-size: 1.6rem;
+}
+.footer-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    z-index: 1;
+    overflow: hidden;
+}
+.footer-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--sec-bg-color);
+    z-index: -1;
+    transition: .5s;
+} 
+.footer-iconTop a:hover::before {
+    width: 100%;
+}
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+    transition: .5s;
+}
+.footer-iconTop a:hover i {
+    color: var(--main-color);
 }
