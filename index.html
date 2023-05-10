@@ -25,6 +25,8 @@
             <a href="#about">About</a>
             <a href="#port">Portfolio</a>
             <a href="#contact">Contact</a>
+
+            <span class="active-nav"></span>
         </nav>
     </header>
 
@@ -38,10 +40,10 @@
         </div>
 
         <div class="home-sci">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-            <a href="#"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100010258231653"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.linkedin.com/in/rashmi-sandaruwini-194225211/"><i class='bx bxl-linkedin' ></i></a>
+            <a href="https://www.instagram.com/rash_0956/"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/rash0956"><i class='bx bxl-github' ></i></a>
         </div>
 
         <div class="home-imgHover"></div>
@@ -65,48 +67,86 @@
         <a href="#" class="btn">Download CV</a>
     </div>
 
+    <div class="edu-container">
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <!---p class="tab-links" onclick="opentab('experience')">Experience</p---->
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('certificate')">Course</p>
+        </div>
 
-    <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-        <!---p class="tab-links" onclick="opentab('experience')">Experience</p---->
-        <p class="tab-links" onclick="opentab('education')">Education</p>
-        <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
-    </div>
+        <div class="edu-box">
 
-    <div class="tab-contents active-tab" id="skills">
-        <ul>
-            <li><span>Programming Language</span><br>JavaScript/ Python/ Java/ CSS/ HTML</li>
-            <!---li><span>Web development</span><br>Web app development</li---->
-            <li><span>Graphi Designing</span><br>Adobe Illustrator/ Adobe Photoshop</li>
-        </ul>
-    </div>
-    <!----div class="tab-contents" id="experience">
-        <ul>
-            <li><span>None</span><br>.............</li>
-            <li><span>None</span><br>.............</li>
-            <li><span>None</span><br>.............</li>
-        </ul>
-    </div---->
-    <div class="tab-contents" id="education">
-        <ul>
-            <li><span>Sri Lanka Technological Campus Padukka</span><br>BSc (Hons) in Software Engineering(2020-2024)</li>
-            <li><span>IMBS Green Campus</span><br>Diploma in Psychology & Counselling</li>
-            <li><span>B/ Vishaka Girls High School Badulla</span><br>Completed G.C.E(A/L) in 2017 <br>(ICT - C, Geography - B, Mdeia - B)</li>
-        </ul>
-    </div>
-    <div class="tab-contents" id="certificate">
-        <ul>
-            <li><span>University Of Moratuwa</span><br>Online learning Programme in Web Designing for Beginners</li>
-            <li><span>Uva Wellassa University</span><br>Certificate Course In Engilish For School Leavers</li>
-            <li><span>National Youth Services Council Badulla</span><br>Certificate Course in Computer Application Assistant</li>
-            <li><span>Sri Lanka Technological Campus Padukka</span><br> Road to CodMania’21: Python Fundamentals & Algorithmic Programming IEEE 
-                Computer Society</li>
-        </ul>
-    </div>    
-
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming Language</span><br>JavaScript/ Python/ Java/ CSS/ HTML</li>
+                    <!---li><span>Web development</span><br>Web app development</li---->
+                    <li><span>Graphi Designing</span><br>Adobe Illustrator/ Adobe Photoshop</li>
+                </ul>
+            </div>
+            <!----div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>None</span><br>.............</li>
+                    <li><span>None</span><br>.............</li>
+                    <li><span>None</span><br>.............</li>
+                </ul>
+            </div---->
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Sri Lanka Technological Campus Padukka</span><br>BSc (Hons) in Software Engineering(2020-2024)</li>
+                    <li><span>IMBS Green Campus</span><br>Diploma in Psychology & Counselling</li>
+                    <li><span>B/ Vishaka Girls High School Badulla</span><br>Completed G.C.E(A/L) in 2017 <br>(ICT - C, Geography - B, Mdeia - B)</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="certificate">
+                <ul>
+                    <li><span>University Of Moratuwa</span><br>Online learning Programme in Web Designing for Beginners</li>
+                    <li><span>Uva Wellassa University</span><br>Certificate Course In Engilish For School Leavers</li>
+                    <li><span>National Youth Services Council Badulla</span><br>Certificate Course in Computer Application Assistant</li>
+                    <li><span>Sri Lanka Technological Campus Padukka</span><br> Road to CodMania’21: Python Fundamentals & Algorithmic Programming IEEE 
+                        Computer Society</li>
+                </ul>
+            </div>    
 </section>
 
-<!------------------------------Portfolio--------------------------->
+<!------------------------------EDUCATION--------------------------->
+
+<!--<section class="education" id="education">
+    <h2 class="heading">Education</h2>
+
+    <div class="edu-container">
+        <div class="edu-box">
+            <h3>Skills</h3>
+            <ul>
+                <li><span>Programming Language</span><br>JavaScript/ Python/ Java/ CSS/ HTML</li>
+                li><span>Web development</span><br>Web app development</li
+                <li><span>Graphi Designing</span><br>Adobe Illustrator/ Adobe Photoshop</li>
+            </ul>
+        </div>
+
+        <div class="edu-box">
+            <h3>Education</h3>
+            <ul>
+                <li><span>Sri Lanka Technological Campus Padukka</span><br>BSc (Hons) in Software Engineering(2020-2024)</li>
+                <li><span>IMBS Green Campus</span><br>Diploma in Psychology & Counselling</li>
+                <li><span>B/ Vishaka Girls High School Badulla</span><br>Completed G.C.E(A/L) in 2017 <br>(ICT - C, Geography - B, Mdeia - B)</li>
+            </ul>
+        </div>
+
+        <div class="edu-box">
+            <h3>Certificate</h3>
+            <ul>
+                <li><span>University Of Moratuwa</span><br>Online learning Programme in Web Designing for Beginners</li>
+                <li><span>Uva Wellassa University</span><br>Certificate Course In Engilish For School Leavers</li>
+                <li><span>National Youth Services Council Badulla</span><br>Certificate Course in Computer Application Assistant</li>
+                <li><span>Sri Lanka Technological Campus Padukka</span><br> Road to CodMania’21: Python Fundamentals & Algorithmic Programming IEEE 
+                    Computer Society</li>
+            </ul>
+        </div>
+    </div>
+</section>-->
+
+<!------------------------------PRTFOLIO--------------------------------->
 
 <section class="port" id="port">
 
@@ -116,33 +156,33 @@
             <div class="work">
                 <img src="img/portfolio1.jpg">
                 <div class="layer">
-                    <h3>Graphic Design (Ai & Ps)</h3>
-                    <p>This is my Graphic design. I design template and Ai picture</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h3>SOAP</h3>
+                    <p>This SOAP-API was created to convert between different currencies. Basically converts between 50+ different currencies. JSON files are used throughout the entire PHP-based project to store data.</p>
+                    <a href="https://github.com/rash0956/Soap.git"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="img/portfolio2.jpg">
                 <div class="layer">
-                    <h3>Bla bla bla</h3>
-                    <p>This is my Graphic design. I design template and Ai picture</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h3>ECommerce-System</h3>
+                    <p>This website was created by me for the final project of web development course, which is an open online course of the University of Moratuwa, under the "Trainee- Full Stack Developer" program. HTML, CSS, and Javascript languages were used to create it</p>
+                    <a href="https://github.com/rash0956/ECommerce-System.git"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="img/portfolio3.jpg">
                 <div class="layer">
-                    <h3>Teen teen teen</h3>
-                    <p>This is my Graphic design. I design template and Ai picture</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h3>Flyer Design</h3>
+                    <p>This is a flyer created by me for SLTC Ventures Cohort 01 held by USE at our university, SLTC Research university. (Adobe Photoshop)</p>
+                    <a href="https://drive.google.com/file/d/1uXY91OSTtc1YHmXYeQyC9Vsc2q42aKjp/view?usp=share_link"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="img/portfolio4.jpg">
                 <div class="layer">
-                    <h3>Bla bla bla</h3>
-                    <p>This is my Graphic design. I design template and Ai picture</p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <h3>Song cover</h3>
+                    <p>This is a creation I made in my spare time.  This composition was created for a song.  Adobe illustrator software was used for this.</p>
+                    <a href="https://drive.google.com/file/d/1i_-UVe2lRzBX5-dnt6LvxMr_74FTJYGM/view?usp=share_link"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
@@ -152,36 +192,36 @@
 </section>
 
 
-<!------------------------------CONTACT--------------------------->#
+<!------------------------------CONTACT--------------------------->
 
 <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me</span></h2>
 
-    <form action="#">
+    <form name="contact">
         <div class="input-box">
             <div class="input-field">
-                <input type="text" placeholder="Full Name" required>
+                <input type="text" name="Name" placeholder="Full Name" required>
                 <span class="focus"></span>
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Email Address" required>
+                <input type="text" name="Email" placeholder="Email Address" required>
                 <span class="focus"></span>
             </div>
         </div>
 
         <div class="input-box">
             <div class="input-field">
-                <input type="number" placeholder="Mobile Number" required>
+                <input type="number" name="Number" placeholder="Mobile Number" required>
                 <span class="focus"></span>
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Subject" required>
+                <input type="text" name="Subject" placeholder="Subject" required>
                 <span class="focus"></span>
             </div>
         </div>
 
         <div class="textarea-field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <textarea name="Meessage" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
             <span class="focus"></span>
         </div>
 
@@ -189,11 +229,12 @@
             <button type="submit" class="btn">Submit</button>
         </div>
     </form>
+    <span id="msg"></span>
 </section>
 
 <!------------------------------FOOTER--------------------------->
 
-<fooer class="footer">
+<footer class="footer">
     <div class="footer-text">
         <p>Copyright &copy; Rashmi.2023</p>
     </div>
@@ -201,9 +242,7 @@
     <div class="footer-iconTop">
         <a href="#"><i class='bx bx-up-arrow-alt' ></i></a>
     </div>
-</fooer>
-
-
+</footer>
 
     <script src="script.js"></script>
 </body>
