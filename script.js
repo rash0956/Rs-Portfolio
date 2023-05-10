@@ -47,19 +47,6 @@ window.onscroll = () => {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*=============== About ===============*/
 
 var tablinks = document.getElementsByClassName("tab-links");
@@ -79,7 +66,7 @@ function opentab(tabname){
 /*=============== contact ===============*/
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyhPESKrDnTM8M9HnDazcpwSLXAPXHoIcT98eVt0-JzZhKqxAmMBZeNeQx0Qn6AlAzEWw/exec'
-  const form = document.forms['contact']
+  const form = document.forms['Contact']
   const msg = document.getElementById("msg")
 
   form.addEventListener('submit', e => {
