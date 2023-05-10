@@ -85,7 +85,7 @@ section {
 }
 .home-content {
     max-width: 60rem;
-    z-index: 99;
+    z-index: 55;
 }
 .home-content h1 {
     font-size: 4.5rem;
@@ -255,6 +255,7 @@ span {
 }
 .edu-container .edu-box {
     flex: 1 1 30.rem;
+    margin-right: 10%;
     background: var(--sec-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -278,7 +279,6 @@ span {
 .tab-links {
     justify-content: center;
     margin-right: 10%;
-    margin-left: 10%;
     cursor: pointer;
     position: relative;
     color: var(--text-color);
@@ -372,6 +372,9 @@ span {
     height: 60px;
     border-radius: 50%;
     text-align: center;
+}
+.layer p{
+    overflow: hidden;
 }
 .work:hover img{
     transform: scale(1.1);
@@ -511,7 +514,7 @@ span {
 
 /*--------------------------------BRAKEPOINT---------------------------------------- */
 
-@media (max-width: 1200px){
+@media (max-width: 600px){
     html {
         font-size: 55%;
     }
@@ -531,7 +534,8 @@ span {
         padding: 2rem 4%;
     }
 }
-@media (max-width: 991px){
+
+@media (max-width: 768px){
     .header {
         background: var(--sec-bg-color);
     }
@@ -590,7 +594,7 @@ span {
     .home-imgHover {
         pointer-events: none;
         background: var(--bg-color);
-        opacity: .6;
+        opacity: .1;
     }
 }
 @media (max-width: 520px) {
@@ -602,15 +606,19 @@ span {
         flex-direction: column;
     }
     .home-sci {
-        width: 16px;
+        width: 160px;
     }
     .home-sci a {
         width: 38px;
         height: 38px;
     }
+    .tab-titles {
+        font-size: 16px;
+        margin-right: 20px;
+    }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 462px) {
     .home-content h1 {
         font-size: 5.2rem;
     }
@@ -641,7 +649,7 @@ span {
         text-align: center;
     }
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 2rem;
     }
    
 }
