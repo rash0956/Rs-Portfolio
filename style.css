@@ -255,7 +255,7 @@ span {
 }
 .edu-container .edu-box {
     flex: 1 1 30.rem;
-    margin-right: 10%;
+    margin-left: 5%;
     background: var(--sec-bg-color);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
@@ -272,8 +272,8 @@ span {
 .tab-titles{
     display: flex;
     margin: 10px 0 20px;
-    margin-right: 20%; 
-    font-size: 20px;
+    margin-right: 5%; 
+    font-size: 23px;
     font-weight: 500;
 }
 .tab-links {
