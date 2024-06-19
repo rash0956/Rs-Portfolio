@@ -21,10 +21,10 @@
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
+            <a href="#home" >Home</a>
             <a href="#about">About</a>
             <a href="#port">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#contact" >Contact</a>
 
             <span class="active-nav"></span>
         </nav>
@@ -36,8 +36,8 @@
     <div class="home-content">
         <h1>Hi ,I'm <span>Rashmi Sandaruwini</span></h1>
         <div class="text-animate">
-            <h3>Frontend Developper</h3>
-            <h3>Graphic Designer</h3>
+            <h3>UI/UX Designer & Graphic Designer</h3>
+           
             
         </div>
 
@@ -45,7 +45,7 @@
             <a href="https://www.linkedin.com/in/rashmi-sandaruwini-194225211/"><i class='bx bxl-linkedin' ></i></a>
             <a href="https://t.me/rash0956"><i class='bx bxl-telegram' ></i></a>
             <a href="https://www.facebook.com/profile.php?id=100010258231653"><i class='bx bxl-facebook'></i></a>
-            <a href="https://www.instagram.com/rash_0956/"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.instagram.com/ilumoonbe_eans/"><i class='bx bxl-instagram' ></i></a>
             <a href="https://github.com/rash0956"><i class='bx bxl-github' ></i></a>
         </div>
 
@@ -73,7 +73,7 @@
     <div class="edu-container">
         <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-            <!---p class="tab-links" onclick="opentab('experience')">Experience</p---->
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
             <p class="tab-links" onclick="opentab('certificate')">Course</p>
         </div>
@@ -82,14 +82,14 @@
 
             <div class="tab-contents active-tab" id="skills">
                 <ul>
-                    <li><span>Programming Language</span><br>JavaScript/ Python/ Java/ CSS/ HTML</li>
-                    <!---li><span>Web development</span><br>Web app development</li---->
+                    <li><span>Programming Language</span><br>JavaScript/ Java/ CSS/ HTML</li>
+                    <li><span>Ui/Ux</span><br>Figma</li>
                     <li><span>Graphi Designing</span><br>Adobe Illustrator/ Adobe Photoshop</li>
                 </ul>
             </div>
             <div class="tab-contents" id="experience">
                 <ul>
-                    <li><span>None</span><br>.............</li>
+                    <li><span>Aadhira Holidings (2023-2024 (6 mon))</span><br>Aadhira Holdings - Digitalizing Future Interned for 6 months at Aadhira Holdings, where I gained practical experience in web development. Contributed to web development project under the guidance of senior developers. Participated in coding, debugging, and testing processes to enhance my skills in frontend development.</li>
                     <!--li><span>None</span><br>.............</li---->
                     <!---li><span>None</span><br>.............</li---->
                 </ul>
@@ -104,6 +104,7 @@
             <div class="tab-contents" id="certificate">
                 <ul>
                     <li><span>University Of Moratuwa</span><br>Online learning Programme in Web Designing for Beginners</li>
+                    <li><span>Sri Lanka Rupavahini Corporation</span><br>Certificate Course on Dubbing</li>
                     <li><span>Uva Wellassa University</span><br>Certificate Course In Engilish For School Leavers</li>
                     <li><span>National Youth Services Council Badulla</span><br>Certificate Course in Computer Application Assistant</li>
                     <li><span>Sri Lanka Technological Campus Padukka</span><br> Road to CodMania’21: Python Fundamentals & Algorithmic Programming IEEE 
@@ -267,8 +268,26 @@
             </div>
 
         </div>
-        <!--<a href="#" class="btn">See more</a>-->
+        <div class="btn-box btns">
+            <button type="Load-more" class="btn">Load More</button>
+        </div>
     </div>
+    <script>
+    let loadMoreBtn = document.querySelector('#Load More');
+    let currrentItem = 3;
+
+    loadMoreBtn.onclick = () =>{
+        let boxes = [...document.querySelectorAll('.container .container .work')];
+        for (var i = currrentItem; i <currrentItem + 3; i++){
+            boxes[i].style.display = 'inline-block';
+        }
+        currrentItem += 3;
+
+        if(currrentItem >= boxes.length){
+            loadMoreBtn.style.display = 'none';
+        }
+    }
+    </script>
     
 </section>
 

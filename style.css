@@ -58,8 +58,7 @@ header .logo span{
     margin-left: 3.5rem;
     transition: .3s;
 }
-.navbar a:hover,
-.navbar a.active {
+.navbar a:hover{
     color: var(--main-color);
 }
 #menu-icon {
@@ -657,7 +656,7 @@ span {
 /* KEYFRAME NIMATION */
 @keyframes homeBgText {
     0%,10%,100%{
-        background-position: -33rem;
+        background-position: -25rem 0;
     }
     65%,85%{
         background: 0 0;
