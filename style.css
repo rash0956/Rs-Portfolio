@@ -392,6 +392,10 @@ span {
     color: #fff;
     transition: bbackground 0.5s;
 }
+.btn2{
+    display: none;
+}
+
 .btn:hover{
     background: #41eafa;
 }

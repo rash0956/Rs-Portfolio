@@ -97,7 +97,8 @@
             <div class="tab-contents" id="experience">
                 <ul>
                     <li><span>Aadhira Holidings (2023-2024 (6 mon))</span><br>Aadhira Holdings - Digitalizing Future Interned for 6 months at Aadhira Holdings, where I gained practical experience in web development. Contributed to web development project under the guidance of senior developers. Participated in coding, debugging, and testing processes to enhance my skills in frontend development.</li>
-                    <!--li><span>None</span><br>.............</li---->
+                    <li><span>Insaash(2024.11.11-2024.12 (1 mon))</span>Insaash<br>As a UI/UX and Graphic Design Intern at Insaash, I enhanced user interfaces and crafted visually appealing designs using Canva, Figma, Adobe Photoshop, and Illustrator. My work focused on creating seamless user experiences and developing creative assets for branding projects. At Aadhira Holdings, I contributed to responsive web designs and implemented MySQL databases for backend support.
+                         These experiences honed my skills in user-centered design and collaborative problem-solving.</li>
                     <!---li><span>None</span><br>.............</li---->
                 </ul>
             </div>
@@ -307,28 +308,13 @@
 
         </div>
         <div class="btn-box btns">
-            <button type="Load-more" class="btn">Load More</button>
+            <button type="Load-more" class="btn1">Load More</button>
         </div>
+        <label for="btn-box" class="btn-box btns">
+            <span class="btn1">Load More</span>
+            <span class="btn2">Load More</span>
+        </label>
     </div>
-    <script>
-    let loadMoreBtn = document.querySelector('#Load More');
-    let currrentItem = 3;
-
-    loadMoreBtn.onclick = () =>{
-        let boxes = [...document.querySelectorAll('.container .container .work')];
-        for (var i = currrentItem; i <currrentItem + 3; i++){
-            boxes[i].style.display = 'inline-block';
-        }
-        currrentItem += 3;
-
-        if(currrentItem >= boxes.length){
-            loadMoreBtn.style.display = 'none';
-        }
-    }
-    </script>
-    
-</section>
-
 
 <!------------------------------CONTACT--------------------------->
 
